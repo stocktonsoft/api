@@ -483,6 +483,27 @@ Arguments:
     },
     {
         "type": "Select",
+        "name": "sub_source2",
+        "description": "Choose sub source"
+    },
+    {
+        "type": "Select",
+        "name": "sub_source3",
+        "description": "Choose sub source"
+    },
+    {
+        "type": "Select",
+        "name": "sub_source4",
+        "description": "Choose sub source"
+    },
+    {
+        "type": "Select",
+        "name": "sub_source5",
+        "description": "Choose sub source"
+    },
+
+    {
+        "type": "Select",
         "name": "employee_id",
         "description": "Choose employee"
     },
@@ -539,6 +560,10 @@ For example like this:
 - attributes[campaign_id]=something
 
 - attributes[sub_source]=something
+- attributes[sub_source2]=something 
+- attributes[sub_source3]=something 
+- attributes[sub_source4]=something 
+- attributes[sub_source5]=something 
 
 - attributes[employee_id]=something
 
