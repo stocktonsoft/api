@@ -382,6 +382,7 @@ Redirect the client to the autologin url it returns
             + ip_address: `-` (required, string) - IP address of client (required, exists)
             + a_aid: `-` (required, string) - Extra details of campaign (required, exists)
             + b_bid: `-` (required, string) - Extra details of campaign (required, exists)
+            + sub_brand `-` (optional, string) - Extra details of target brand (optional, exists)
             + redirect_page: '-' /#/crypto-wallet/deposit/request'
 
 
@@ -498,6 +499,11 @@ Arguments:
     },
     {
         "type": "Select",
+        "name": "sub_brand",
+        "description": "Choose sub brand"
+    },
+    {
+        "type": "Select",
         "name": "sub_source5",
         "description": "Choose sub source"
     },
@@ -565,6 +571,8 @@ For example like this:
 - attributes[sub_source4]=something 
 - attributes[sub_source5]=something 
 
+- attributes[sub_brand]=something 
+
 - attributes[employee_id]=something
 
 - attributes[desk_id]=something
@@ -603,6 +611,7 @@ For example like this:
         + ip_address: `-` (required, string) - IP address of client (required, exists)
         + a_aid: `-` (required, string) - Extra details of campaign (required, exists)
         + b_bid: `-` (required, string) - Extra details of campaign (required, exists)
+        + sub_brand `-` (optional, string) - Extra details of target brand (optional, exists)
 
 
 
@@ -683,6 +692,11 @@ Arguments:
         "name": "state",
         "description": "Enter customer state"
     }
+    {
+        "type": "Select",
+        "name": "sub_brand",
+        "description": "Choose sub brand"
+    },
 ]
 ```
 
