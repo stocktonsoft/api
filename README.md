@@ -295,7 +295,8 @@ Retrieves all WorkerActions which linked to him.
             }
         }
 
-### List All FTD Traders [GET /api/v6/terms/Traders{?token,perPage,page,conditions[]}]
+### List All FTD 
+[GET /api/v6/terms/Traders{?token,perPage,page,conditions[]}]
 
 Retrieves all Traders with FTD which linked to him.
 
@@ -329,6 +330,7 @@ Retrieves all Deposits with FTD status which linked to him.
         + Default: `15`
     + page: `1` (optional, number) ... What page should be loaded
     + conditions: `conditions[0][key]=tickets.is_ftd,conditions[0][operator]==,conditions[0][value]=1,conditions[1][key]=customers.campaign_id,conditions[1][operator]==,conditions[1][value]=5` (optional, array) ... Conditions
+    + to add a filter on registration date, you will have to add an additional condition, for example like this `&conditions[1][key]=customers.created_at&conditions[1][operator]=in date range&conditions[1][value]=2022-08-01 17:18:58 - 2032-08-10 17:18:58&page=0&perPage=100`
     
 + Response 200 (application/json)
 
